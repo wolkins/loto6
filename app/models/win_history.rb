@@ -1,0 +1,2 @@
+class WinHistory < ApplicationRecord
+end
