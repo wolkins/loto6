@@ -39,3 +39,6 @@ diff_result.txt
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+# ignore database
+db/mysql_data

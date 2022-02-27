@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:5.7
+    environment:
+      - "TZ=Asia/Tokyo"
+      - "MYSQL_ALLOW_EMPTY_PASSWORD=yes"
+    volumes:
+      - ../db/mysql_data:/var/lib/mysql
+      - ./multibyte.cnf:/etc/mysql/conf.d/multibyte.cnf
+    ports:
+      - '3308:3306'
